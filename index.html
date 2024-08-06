@@ -36,66 +36,69 @@
     <link rel="stylesheet" type="text/css" href="assets/css/custom-spacing.css">
     <!--================= Responsive css =================-->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons.css" rel="stylesheet">
+
     <style>
-/* Basic reset and container styling */
-/* Basic reset and container styling */
-/* Basic reset and container styling */
-.latest-news-container {
+.latest-news-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f4f4f4;
-    padding: 20px 0;
     position: relative;
-    overflow: hidden;
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .latest-news {
-    flex: 1;
+    display: flex;
+    align-items: center;
     overflow: hidden;
-    position: relative;
+    width: calc(100% - 60px); /* Adjust based on button width */
 }
 
 .news-text {
     display: flex;
-    white-space: nowrap;
+    align-items: center;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
 .news-item {
-    display: inline-block;
-    padding: 0 15px;
-    min-width: 100%; /* Adjust based on your content */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.news-icon {
+    margin-right: 5px; /* Space between icon and news text */
+    font-size: 24px; /* Adjust size as needed */
+    color: #007bff; /* Adjust color as needed */
 }
 
 .arrow-btn {
-    background: #ddd;
+    background: transparent;
     border: none;
-    padding: 10px;
-    cursor: pointer;
     font-size: 24px;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .prev-btn {
-    left: 0;
+    left: 10px;
 }
 
 .next-btn {
-    right: 0;
-}
-
-.arrow-btn:hover {
-    background: #bbb;
+    right: 10px;
 }
 
 
     </style>
-   
+
 </head>
 
 <body>
@@ -224,7 +227,7 @@
                                     <ul>
                                         <li><a href="corevalues.html">Core Values & Student Attributes</a></li>
                                         <li><a href="outcomebasededucation.html">Outcome Based Education</a></li>
-                                        <li><a href="#" >Curriculum Outcome</a></li>
+                                        <li><a href="curricular.html" >Curriculum Outcome</a></li>
                                      
                                     </ul>
                                 </li>
@@ -352,40 +355,41 @@
                             <img class="desktop" src="assets/images/banner/bg.jpg" alt="Slider Image 1">
                             <img class="mobile" src="assets/images/banner/bg.jpg" alt="Slider Image 1">
                         </div>
-                        <div class="latest-news-container">
-                            <button class="arrow-btn prev-btn" onclick="prevNews()">&#9664;</button>
-                            <div class="latest-news">
-                                <div class="news-text">
-                                    <span class="news-item">Latest News: New courses available for the upcoming semester! Check them out on our website.</span>
-                                    <span class="news-item">Breaking News: Major updates to our platform! Stay tuned for more details.</span>
-                                    <span class="news-item">Update: Our support team is here to help 24/7. Contact us anytime!</span>
-                                    <span class="news-item">Special Offer: Exclusive discounts on all courses for the next month!</span>
-                                </div>
-                            </div>
-                            <button class="arrow-btn next-btn" onclick="nextNews()">&#9654;</button>
-                        </div>
                         <div class="container">
                             <div class="slider-content">
                                 <div class="content-part">
-                                    <span class="slider-pretitle" style="font-size:40px;"><strong>Welcome to Government College, Borda-Margao
-
-                                        (Autonomous)</strong></span>
+                                    <span class="slider-pretitle" style="font-size:40px;">
+                                        <strong>Welcome to Government College, Borda-Margao (Autonomous)</strong>
+                                    </span>
                                     <h4 class="slider-title" style="font-size: 30px;">
-                                        We are
-
-                                        Redefining Education for a Future-Ready World
+                                        We are Redefining Education for a Future-Ready World
                                     </h4>
                                     <div class="slider-btn">
                                         <button class="home-six-btn"><a href="#">Admissions</a></button>
                                     </div>
-                             
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
+                    <!-- Additional slides can be added here -->
                 </div>
             </div>
+            
+            <!-- Latest News Section -->
+            <div class="latest-news-section">
+                <button class="arrow-btn prev-btn" onclick="prevNews()">&#9664;</button>
+                <div class="latest-news">
+                   
+                    <div class="news-text" id="news-carousel">
+                        <!-- News items will be dynamically injected here -->
+                    </div>
+                </div>
+                <button class="arrow-btn next-btn" onclick="nextNews()">&#9654;</button>
+            </div>
+            
+            
+            
+            
             <!--================= Slider Section End Here =================-->
 
 
@@ -604,7 +608,7 @@
             <div class="courses-section-six pt---120 pb---120">
                 <div class="container">
                     <div class="section-title-area-six text-center mb---70">
-                        <div class="section-title">Our Programs
+                        <div class="section-title">Our Innovative Programs
                         </div>
                     </div>
                     <div class="slider-area">
@@ -1370,37 +1374,57 @@
                 }
             });
         </script>
-         <script>
-            const newsText = document.querySelector('.news-text');
-            const newsItems = document.querySelectorAll('.news-item');
-            let currentIndex = 0;
-            const itemCount = newsItems.length;
-            const itemWidth = newsItems[0].offsetWidth; // Get the width of a news item
-            
-            function showNextNews() {
-                currentIndex = (currentIndex + 1) % itemCount;
-                const offset = -currentIndex * itemWidth;
-                newsText.style.transform = `translateX(${offset}px)`;
-            }
-            
-            function showPrevNews() {
-                currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-                const offset = -currentIndex * itemWidth;
-                newsText.style.transform = `translateX(${offset}px)`;
-            }
-            
-            // Set interval for automatic news change
-            setInterval(showNextNews, 1000);
-            
-            // Optional: Add event listeners for arrows
-            document.querySelector('.prev-btn').addEventListener('click', showPrevNews);
-            document.querySelector('.next-btn').addEventListener('click', showNextNews);
-            
-            // Initial news display
-            showNextNews();
-            
-            
-                </script>
+        <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const newsItems = [
+        "Latest News: New courses available for the upcoming semester! Check them out on our website.",
+        "Breaking News: Major updates to our platform! Stay tuned for more details.",
+        "Update: Our support team is here to help 24/7. Contact us anytime!",
+        "Special Offer: Exclusive discounts on all courses for the next month!"
+    ];
+    const newsContainer = document.getElementById('news-carousel');
+
+    function updateNews() {
+        if (newsContainer) {
+            // Create the news item with icon and text
+            newsContainer.innerHTML = `
+                <div class="news-item">
+                    <i class="fas fa-bullhorn news-icon"></i>
+                    <span>${newsItems[currentIndex]}</span>
+                </div>
+            `;
+            currentIndex = (currentIndex + 1) % newsItems.length;
+        }
+    }
+
+    function prevNews() {
+        if (newsContainer) {
+            currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
+            updateNews();
+        }
+    }
+
+    function nextNews() {
+        if (newsContainer) {
+            currentIndex = (currentIndex + 1) % newsItems.length;
+            updateNews();
+        }
+    }
+
+    // Initialize news carousel
+    updateNews();
+    setInterval(nextNews, 3000); // Change every 3 seconds for demonstration
+
+    // Expose functions for button onclick handlers
+    window.prevNews = prevNews;
+    window.nextNews = nextNews;
+});
+
+
+
+           
+            </script>  
 </body>
 
 </html>
