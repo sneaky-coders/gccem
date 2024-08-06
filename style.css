@@ -11571,3 +11571,24 @@ body.event-page .react-upcoming__event .event__card .event_time {
   align-items: center;
 }
 
+.btn-login-signup {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-login-signup svg {
+  margin-right: 8px;
+}
+
+.btn-login-signup:hover {
+  background-color: #0056b3;
+}
