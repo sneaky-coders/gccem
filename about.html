@@ -97,6 +97,25 @@
       .last-li {
         margin-top: 1rem;
       }
+      .react-main-menu {
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    width: 100%;
+}
+
+/* Adjust inner menus to avoid extra space */
+.react-inner-menus {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping if needed */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Optionally adjust the spacing of individual menu items */
+.react-inner-menus > li {
+    margin-right: 20px; /* Adjust margin as needed */
+}
     </style>
   </head>
   <body>
@@ -138,7 +157,6 @@
                                   </svg>
                                   <a href="mailto:gcc.margao@gmail.com">gcc.margao@gmail.com</a>
                               </li>
-
                           </ul>
                       </div>
                   </div>
@@ -154,6 +172,20 @@
               </div>
           </div>
       </div>
+      
+      <!-- Banner Section -->
+    <!-- Banner Section -->
+<div class="banner-area">
+  <div class="container">
+      <div class="banner-content">
+          <!-- Optional overlay for text or additional content -->
+        
+          <img src="assets/banner.jpg" alt="Banner Image" height="25%" style="padding-top: 5px;">
+      </div>
+  </div>
+</div>
+
+  
       <div class="menu-part">
           <div class="container">
               <!--================= Menu Start Here =================-->
@@ -161,8 +193,7 @@
                   <nav>
                       <!--================= Menu Toggle btn =================-->
                       <div class="menu-toggle">
-                          <div class="logo"><a href="index.html" class="logo-text"> <img src="assets/images/logo.png"
-                                      alt="logo"> </a></div>
+                          <!-- Removed logo section -->
                           <button type="button" id="menu-btn">
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
@@ -225,10 +256,26 @@
                               </li>
                               <li> <a href="#">Academics</a>
                                   <ul>
-                                     <li><a href="corevalues.html">Core Values & Student Attributes</a></li>
+                                      <li><a href="corevalues.html">Core Values & Student Attributes</a></li>
                                       <li><a href="outcomebasededucation.html">Outcome Based Education</a></li>
                                       <li><a href="curricular.html" >Curriculum Outcome</a></li>
                                    
+                                  </ul>
+                              </li>
+                              <li><a href="#">Programmes</a>
+                                  <ul>
+                                      <li><a href="#">Graduation</a>
+                                          <ul>
+                                              <li><a href="#">B.Com</a></li>
+                                              <li><a href="#">B.Sc</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="#">Post-Graduation</a>
+                                          <ul>
+                                              <li><a href="#">M.Com</a></li>
+                                              <li><a href="#">M.Sc</a></li>
+                                          </ul>
+                                      </li>
                                   </ul>
                               </li>
                               <li> <a href="#">Admissions</a>
@@ -310,8 +357,8 @@
                                   </ul>
                               </li> -->
                               <li> <a href="contact.html">Contact</a></li>
-                              <li><a href="#" class="btn-login-signup"><i class="fa fa-user"></i>Login / Signup</a></li>
-                  
+                          
+                             
                           </ul>
                           <!-- <div class="searchbar-part">
                               <div class="react-login">
@@ -339,7 +386,6 @@
                       </div>
                   </nav>
               </div>
-              <!--=================  Menu End Here  =================-->
           </div>
       </div>
   </header>

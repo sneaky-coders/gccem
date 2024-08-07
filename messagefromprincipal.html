@@ -119,7 +119,25 @@
     font-style: italic;
     color: #333333;
 }
+.react-main-menu {
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    width: 100%;
+}
 
+/* Adjust inner menus to avoid extra space */
+.react-inner-menus {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping if needed */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Optionally adjust the spacing of individual menu items */
+.react-inner-menus > li {
+    margin-right: 20px; /* Adjust margin as needed */
+}
 
 
     </style>
@@ -136,237 +154,265 @@
 
     <!--================= Header Section Start Here =================-->
     <header id="react-header" class="react-header">
-      <div class="topbar-area style1">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-7">
-                      <div class="topbar-contact">
-                          <ul>
-                              <li>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round" class="feather feather-phone">
-                                      <path
-                                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                      </path>
-                                  </svg>
-                                  <a href="tel:+919028586776">+919028586776</a>
-                              </li>
-                              <li>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round" class="feather feather-mail">
-                                      <path
-                                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                      </path>
-                                      <polyline points="22,6 12,13 2,6"></polyline>
-                                  </svg>
-                                  <a href="mailto:gcc.margao@gmail.com">gcc.margao@gmail.com</a>
-                              </li>
+        <div class="topbar-area style1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="topbar-contact">
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-phone">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <a href="tel:+919028586776">+919028586776</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-mail">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <a href="mailto:gcc.margao@gmail.com">gcc.margao@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="toolbar-sl-share">
+                            <ul class="social-links">
+                                <li><a href="https://www.facebook.com/people/Government-college-of-Commerce-Economics-Borda-Margao-Goa/100085849539612/"><span aria-hidden="true" class="social_facebook"></span></a></li>
+                                <li><a href="https://x.com/college_goa?mx=2"><span aria-hidden="true" class="social_twitter"></span></a></li>
+                                <li><a href="http://https//www.instagram.com/gccem.college"><span aria-hidden="true" class="social_instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner Section -->
+      <!-- Banner Section -->
+<div class="banner-area">
+    <div class="container">
+        <div class="banner-content">
+            <!-- Optional overlay for text or additional content -->
+          
+            <img src="assets/banner.jpg" alt="Banner Image" height="25%" style="padding-top: 5px;">
+        </div>
+    </div>
+</div>
 
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-lg-5 text-right">
-                      <div class="toolbar-sl-share">
-                          <ul class="social-links">
-                              <li><a href="https://www.facebook.com/people/Government-college-of-Commerce-Economics-Borda-Margao-Goa/100085849539612/"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                              <li><a href="https://x.com/college_goa?mx=2"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                              <li><a href="http://https//www.instagram.com/gccem.college"><span aria-hidden="true" class="social_instagram"></span></a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="menu-part">
-          <div class="container">
-              <!--================= Menu Start Here =================-->
-              <div class="react-main-menu">
-                  <nav>
-                      <!--================= Menu Toggle btn =================-->
-                      <div class="menu-toggle">
-                          <div class="logo"><a href="index.html" class="logo-text"> <img src="assets/images/logo.png"
-                                      alt="logo"> </a></div>
-                          <button type="button" id="menu-btn">
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                          </button>
-                      </div>
-                      <!--================= Menu Structure =================-->
-                      <div class="react-inner-menus">
-                          <ul id="backmenu" class="react-menus react-menus-six home react-sub-shadow">
-                              <li> <a href="index.html">Home</a>
-                              </li>
-                              <li> <a href="#">About Us</a>
-                                  <ul>
-                                      <li> <a href="about.html">About Institution</a></li>
-                                      <li> <a href="#">Messages</a>
-                                          <ul>
-                                          <li> <a href="#">Message from the Chief Minister</a></li>
-                                          <li> <a href="#">Message from the Secretary Education</a></li>
-                                          <li> <a href="#">Message from the Director Higher Education</a></li>
-                                          <li> <a href="messagefromprincipal.html">Message from the Principal</a></li>
-                                              
-                                          </ul>
-                                      </li>
+    
+        <div class="menu-part">
+            <div class="container">
+                <!--================= Menu Start Here =================-->
+                <div class="react-main-menu">
+                    <nav>
+                        <!--================= Menu Toggle btn =================-->
+                        <div class="menu-toggle">
+                            <!-- Removed logo section -->
+                            <button type="button" id="menu-btn">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!--================= Menu Structure =================-->
+                        <div class="react-inner-menus">
+                            <ul id="backmenu" class="react-menus react-menus-six home react-sub-shadow">
+                                <li> <a href="index.html">Home</a>
+                                </li>
+                                <li> <a href="#">About Us</a>
+                                    <ul>
+                                        <li> <a href="about.html">About Institution</a></li>
+                                        <li> <a href="#">Messages</a>
+                                            <ul>
+                                            <li> <a href="#">Message from the Chief Minister</a></li>
+                                            <li> <a href="#">Message from the Secretary Education</a></li>
+                                            <li> <a href="#">Message from the Director Higher Education</a></li>
+                                            <li> <a href="messagefromprincipal.html">Message from the Principal</a></li>
+                                                
+                                            </ul>
+                                        </li>
 
-                                      <li> <a href="#">Staff</a>
-                                          <ul>
-                                          <li> <a href="staff.html">Teaching</a></li>
-                                          <li> <a href="#">Non-Teaching</a></li>
+                                        <li> <a href="#">Staff</a>
+                                            <ul>
+                                            <li> <a href="staff.html">Teaching</a></li>
+                                            <li> <a href="#">Non-Teaching</a></li>
+                                         
+                                                
+                                            </ul>
+                                        </li>
+                                        
                                        
-                                              
-                                          </ul>
-                                      </li>
-                                      
                                      
-                                   
+                                       
+                                       
+                                        <li> <a href="policies.html">Policies & Code of Conduct</a></li>
+                                        <li> <a href="#">NIRF</a>
+                                            <ul>
+                                                <li><a href="assets/nirf/2023.pdf" target="_blank">NIRF DATA 2023</a></li>
+                                                <li><a href="assets/nirf/2022.pdf" target="_blank">NIRF DATA 2022</a></li>
+                                                <li><a href="assets/nirf/2021.pdf" target="_blank">NIRF DATA 2021</a></li>
+                                                <li><a href="assets/nirf/2020.pdf" target="_blank">NIRF DATA 2020</a></li>
+                                                <li><a href="assets/nirf/2019.pdf" target="_blank">NIRF DATA 2019</a></li>
+                                                
+                                            </ul>
+                                        </li>
+
+                                        <li> <a href="#">Grievance Handling</a>
+                                            <ul>
+                                                <li><a href="grievance-redressal-mechanism.html">Grievance Redressal Mechanism</a></li>
+                                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYyV20uUc2oouKAcoBA-fhtRsRianuM-EbkFL67H5_HAGr8g/viewform?pli=1" target="_blank">Grievance Mechanism</a></li>
+                                          
+                                            </ul>
+                                        </li>
+                                
+                                        
+                                    </ul>
+                                </li>
+                                <li> <a href="#">Academics</a>
+                                    <ul>
+                                        <li><a href="corevalues.html">Core Values & Student Attributes</a></li>
+                                        <li><a href="outcomebasededucation.html">Outcome Based Education</a></li>
+                                        <li><a href="curricular.html" >Curriculum Outcome</a></li>
                                      
-                                     
-                                      <li> <a href="policies.html">Policies & Code of Conduct</a></li>
-                                      <li> <a href="#">NIRF</a>
-                                          <ul>
-                                              <li><a href="assets/nirf/2023.pdf" target="_blank">NIRF DATA 2023</a></li>
-                                              <li><a href="assets/nirf/2022.pdf" target="_blank">NIRF DATA 2022</a></li>
-                                              <li><a href="assets/nirf/2021.pdf" target="_blank">NIRF DATA 2021</a></li>
-                                              <li><a href="assets/nirf/2020.pdf" target="_blank">NIRF DATA 2020</a></li>
-                                              <li><a href="assets/nirf/2019.pdf" target="_blank">NIRF DATA 2019</a></li>
-                                              
-                                          </ul>
-                                      </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Programmes</a>
+                                    <ul>
+                                        <li><a href="#">Graduation</a>
+                                            <ul>
+                                                <li><a href="#">B.Com</a></li>
+                                                <li><a href="#">B.Sc</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Post-Graduation</a>
+                                            <ul>
+                                                <li><a href="#">M.Com</a></li>
+                                                <li><a href="#">M.Sc</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> <a href="#">Admissions</a>
+                                    <ul>
+                                        <li><a href="assets/admission/DOC-20240525-WA0019.pdf" target="_blank">Prospectus</a></li>
+                                        <li><a href="assets/admission/DOC-20240603-WA0041.pdf" target="_blank">Admission Process</a></li>
+                                        <li><a href="https://goaadmission.samarth.ac.in/" target="_blank">Online Admission Bcom/BSc</a></li>
+                                        <li><a href="#">Online Admission Msc (Geo-Infoamtics)</a></li>
+                                    </ul>
+                                </li>
 
-                                      <li> <a href="#">Grievance Handling</a>
-                                          <ul>
-                                              <li><a href="grievance-redressal-mechanism.html">Grievance Redressal Mechanism</a></li>
-                                              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYyV20uUc2oouKAcoBA-fhtRsRianuM-EbkFL67H5_HAGr8g/viewform?pli=1" target="_blank">Grievance Mechanism</a></li>
+                                <li> <a href="#">IQAC</a>
+                                    <ul>
+                                        <li><a href="assets/iqac/IQAC-ORDER-11-10-23_c.pdf" target="_blank">IQAC Composition</a></li>
+                                        <li><a href="assets/iqac/ICT-in-teaching-learning.pdf" target="_blank">ICT Enabled Tools</a></li>
+                                        <li><a href="#">Minutes Of Staff Meetings</a></li>
+                                        <li><a href="assets/iqac/Strategic-Plan-of-IQAC_c.pdf" target="_blank">Stategic Plan of IQAC to deploy ICT in Classrooms</a></li>
+                                        <li><a href="assets/iqac/Strategic-Development-Plan_c.pdf">Strategic Plan of the College</a></li>
+                                        <li><a href="#">IQAC CDP, ATR and Meeting Minutes</a></li>
+                                        <li> <a href="#">Feedback</a>
+                                            <ul>
+                                                <li><a href="#">Online Feedback</a></li>
+                                                <li><a href="#" >Feedback Analysis</a></li>
+                                                <li><a href="#" >Action Taken Report</a></li>
+                                          
+                                            </ul>
+                                        </li>
+                                        <li><a href="assets/iqac/IQAC-e-Newsletter-June-August-2023.pdf" target="_blank">IQAC e-Newsletter June-August 2023</a></li>
+                                        <li><a href="assets/iqac/IQAC-e-Newsletter-September-November-2023.pdf" target="_blank">IQAC e-Newsletter September to November 2023</a></li>
+                                    </ul>
+                                </li>
+
+                                <li> <a href="#">NAAC</a>
+                                    <ul>
+                                        <li><a href="assets/naac/NAAC-cert.webp" target="_blank">NAAC Accreditation Certificate</a></li>
+                                        <li><a href="assets/naac/Student-Satisfaction-Survey_c.pdf" target="_blank">Student Satisfaction Survey</a></li>
+                                        <li><a href="assets/naac/GACOGN101522_c.pdf" target="_blank">SSR</a></li>
+                                        <li> <a href="#">DVV</a>
+                                            <ul>
+                                                <li><a href="assets/naac/DVV-Clar-hist-Extended-Profile-Dev_c.pdf" target="_blank">Extended Profile Deviations</a></li>
+                                                <li><a href="assets/naac/DVV-clar_hist-Metric-Level-Dev_c.pdf" target="_blank">Metric Level Deviations</a></li>
+                                          
+                                            </ul>
+                                        </li>
+                                        <li><a href="assets/naac/Undertaking_c.pdf" target="_blank">IIQA Undertaking -Dt. 12-05-2022</a></li>
+                                        <li><a href="assets/naac/Self_Declaration_c.pdf">Self Declaration</a></li>
+                                        <li><a href="assets/naac/University-Affiliation_c.pdf">University Affiliation</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- <li> <a href="#">Pages</a>
+                                    <ul>
+                                        <li> <a href="about.html">About</a></li>
+                                        <li> <a href="instructors.html">Instructor</a></li>
+                                        <li> <a href="profile.html">Profile</a></li>
+                                        <li> <a href="events.html">Events</a>
+                                            <ul>
+                                                <li><a href="events.html">Events</a></li>
+                                                <li><a href="events-right-sidebar.html">Events Sidebar</a></li>
+                                                <li><a href="events-single.html">Events Single</a></li>
+                                            </ul>
+                                        </li>
+                                
                                         
-                                          </ul>
-                                      </li>
-                              
-                                      
-                                  </ul>
-                              </li>
-                              <li> <a href="#">Academics</a>
-                                  <ul>
-                                     <li><a href="corevalues.html">Core Values & Student Attributes</a></li>
-                                      <li><a href="outcomebasededucation.html">Outcome Based Education</a></li>
-                                      <li><a href="curricular.html" >Curriculum Outcome</a></li>
-                                   
-                                  </ul>
-                              </li>
-                              <li> <a href="#">Admissions</a>
-                                  <ul>
-                                      <li><a href="assets/admission/DOC-20240525-WA0019.pdf" target="_blank">Prospectus</a></li>
-                                      <li><a href="assets/admission/DOC-20240603-WA0041.pdf" target="_blank">Admission Process</a></li>
-                                      <li><a href="https://goaadmission.samarth.ac.in/" target="_blank">Online Admission Bcom/BSc</a></li>
-                                      <li><a href="#">Online Admission Msc (Geo-Infoamtics)</a></li>
-                                  </ul>
-                              </li>
-
-                              <li> <a href="#">IQAC</a>
-                                  <ul>
-                                      <li><a href="assets/iqac/IQAC-ORDER-11-10-23_c.pdf" target="_blank">IQAC Composition</a></li>
-                                      <li><a href="assets/iqac/ICT-in-teaching-learning.pdf" target="_blank">ICT Enabled Tools</a></li>
-                                      <li><a href="#">Minutes Of Staff Meetings</a></li>
-                                      <li><a href="assets/iqac/Strategic-Plan-of-IQAC_c.pdf" target="_blank">Stategic Plan of IQAC to deploy ICT in Classrooms</a></li>
-                                      <li><a href="assets/iqac/Strategic-Development-Plan_c.pdf">Strategic Plan of the College</a></li>
-                                      <li><a href="#">IQAC CDP, ATR and Meeting Minutes</a></li>
-                                      <li> <a href="#">Feedback</a>
-                                          <ul>
-                                              <li><a href="#">Online Feedback</a></li>
-                                              <li><a href="#" >Feedback Analysis</a></li>
-                                              <li><a href="#" >Action Taken Report</a></li>
-                                        
-                                          </ul>
-                                      </li>
-                                      <li><a href="assets/iqac/IQAC-e-Newsletter-June-August-2023.pdf" target="_blank">IQAC e-Newsletter June-August 2023</a></li>
-                                      <li><a href="assets/iqac/IQAC-e-Newsletter-September-November-2023.pdf" target="_blank">IQAC e-Newsletter September to November 2023</a></li>
-                                  </ul>
-                              </li>
-
-                              <li> <a href="#">NAAC</a>
-                                  <ul>
-                                      <li><a href="assets/naac/NAAC-cert.webp" target="_blank">NAAC Accreditation Certificate</a></li>
-                                      <li><a href="assets/naac/Student-Satisfaction-Survey_c.pdf" target="_blank">Student Satisfaction Survey</a></li>
-                                      <li><a href="assets/naac/GACOGN101522_c.pdf" target="_blank">SSR</a></li>
-                                      <li> <a href="#">DVV</a>
-                                          <ul>
-                                              <li><a href="assets/naac/DVV-Clar-hist-Extended-Profile-Dev_c.pdf" target="_blank">Extended Profile Deviations</a></li>
-                                              <li><a href="assets/naac/DVV-clar_hist-Metric-Level-Dev_c.pdf" target="_blank">Metric Level Deviations</a></li>
-                                        
-                                          </ul>
-                                      </li>
-                                      <li><a href="assets/naac/Undertaking_c.pdf" target="_blank">IIQA Undertaking -Dt. 12-05-2022</a></li>
-                                      <li><a href="assets/naac/Self_Declaration_c.pdf">Self Declaration</a></li>
-                                      <li><a href="assets/naac/University-Affiliation_c.pdf">University Affiliation</a></li>
-                                  </ul>
-                              </li>
-
-                              <!-- <li> <a href="#">Pages</a>
-                                  <ul>
-                                      <li> <a href="about.html">About</a></li>
-                                      <li> <a href="instructors.html">Instructor</a></li>
-                                      <li> <a href="profile.html">Profile</a></li>
-                                      <li> <a href="events.html">Events</a>
-                                          <ul>
-                                              <li><a href="events.html">Events</a></li>
-                                              <li><a href="events-right-sidebar.html">Events Sidebar</a></li>
-                                              <li><a href="events-single.html">Events Single</a></li>
-                                          </ul>
-                                      </li>
-                              
-                                      
-                                  </ul>
-                              </li> -->
-                              <!-- <li> <a href="coureses-grid.html">Courses</a>
-                                  <ul>
-                                      <li><a href="coureses-grid.html">Courses</a></li>
-                                      <li><a href="coureses-right-sidebar.html">Right Sidebar</a></li>
-                                      <li><a href="coureses-list.html">Courses List</a></li>
-                                      <li><a href="coureses-single.html">Courses Single</a></li>
-                                  </ul>
-                              </li>
-                              <li> <a href="blog.html">Blog</a>
-                                  <ul>
-                                      <li><a href="blog.html">Blog</a></li>
-                                      <li><a href="blog-details.html">Blog Single</a></li>
-                                  </ul>
-                              </li> -->
-                              <li> <a href="contact.html">Contact</a></li>
-                              <li><a href="#" class="btn-login-signup"><i class="fa fa-user"></i>Login / Signup</a></li>
-                          </ul>
-                          <!-- <div class="searchbar-part">
-                              <div class="react-login">
-                                  <a href="login.html">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                          <circle cx="12" cy="7" r="4"></circle>
-                                      </svg>Log In</a>
-                              </div>
-                              <form class="search-form">
-                                  <input type="text" class="form-input" placeholder="Search ">
-                                  <button type="submit" class="form-button">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                          stroke-linecap="round" stroke-linejoin="round"
-                                          class="feather feather-search">
-                                          <circle cx="11" cy="11" r="8"></circle>
-                                          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                      </svg>
-                                  </button>
-                              </form>
-                          </div> -->
-                      </div>
-                  </nav>
-              </div>
-              <!--=================  Menu End Here  =================-->
-          </div>
-      </div>
-  </header>
+                                    </ul>
+                                </li> -->
+                                <!-- <li> <a href="coureses-grid.html">Courses</a>
+                                    <ul>
+                                        <li><a href="coureses-grid.html">Courses</a></li>
+                                        <li><a href="coureses-right-sidebar.html">Right Sidebar</a></li>
+                                        <li><a href="coureses-list.html">Courses List</a></li>
+                                        <li><a href="coureses-single.html">Courses Single</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="blog.html">Blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Single</a></li>
+                                    </ul>
+                                </li> -->
+                                <li> <a href="contact.html">Contact</a></li>
+                            
+                               
+                            </ul>
+                            <!-- <div class="searchbar-part">
+                                <div class="react-login">
+                                    <a href="login.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>Log In</a>
+                                </div>
+                                <form class="search-form">
+                                    <input type="text" class="form-input" placeholder="Search ">
+                                    <button type="submit" class="form-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-search">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div> -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <!--================= Header Section End Here =================-->
 
     <!--================= Wrapper Start Here =================-->
