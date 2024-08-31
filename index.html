@@ -1391,40 +1391,48 @@
         <script src="assets/js/main.js"></script>
 
         <script>
-            // dropdown show & hide
-            $(".campus-dropdown-item > .showed").on("click", function () {
-                var element = $(this).parent(".campus-dropdown-item");
-                if (element.hasClass("active")) {
-                    element.removeClass("active");
-                } else {
-                    element.siblings(".campus-dropdown-item").removeClass('active');
-                    element.addClass("active");
-                }
-            });
-        </script>
-        <script>
-   document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const newsItems = [
-        "B.Com April Semester End Examination Results For Semester II & IV Announced"
+        "B.Com April Semester End Examination Results For Semester II & IV Announced",
+        "Test",
+        "New Course Enrollments Now Open",
+        "Guest Lecture on Data Science Scheduled"
     ];
     const newsContainer = document.getElementById('news-carousel');
 
     function updateNews() {
         if (newsContainer) {
+            // Clear the current content
+            newsContainer.innerHTML = '';
+
             // Create the news item with icon and text
-            newsContainer.innerHTML = `
-                <div class="news-item">
-                    <i class="fas fa-bullhorn news-icon"></i>
-                    <span>${newsItems[currentIndex]}</span>
-                </div>
-            `;
+            const newsItemElement = document.createElement('div');
+            newsItemElement.className = 'news-item';
+
+            // Add the icon
+            const iconElement = document.createElement('i');
+            iconElement.className = 'fas fa-bullhorn news-icon';
+
+            // Add the text
+            const textElement = document.createElement('span');
+            textElement.textContent = newsItems[currentIndex];
+
+            // Append icon and text to the news item element
+            newsItemElement.appendChild(iconElement);
+            newsItemElement.appendChild(textElement);
+
+            // Append the news item to the container
+            newsContainer.appendChild(newsItemElement);
+
+            // Update the index for the next news item
             currentIndex = (currentIndex + 1) % newsItems.length;
         }
     }
 
     function prevNews() {
         if (newsContainer) {
+            // Decrease index and wrap around if needed
             currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
             updateNews();
         }
@@ -1432,19 +1440,21 @@
 
     function nextNews() {
         if (newsContainer) {
+            // Increase index and wrap around if needed
             currentIndex = (currentIndex + 1) % newsItems.length;
             updateNews();
         }
     }
 
-    // Initialize news carousel
+    // Initialize the news carousel
     updateNews();
-    setInterval(nextNews, 3000); // Change every 3 seconds for demonstration
+    setInterval(nextNews, 3000); // Automatically change every 3 seconds
 
-    // Expose functions for button onclick handlers
+    // Expose functions for button onclick handlers (if any)
     window.prevNews = prevNews;
     window.nextNews = nextNews;
 });
+
 
 
 
