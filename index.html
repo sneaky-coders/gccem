@@ -4,8 +4,11 @@
 <head>
     <!--================= Meta tag =================-->
     <meta charset="utf-8">
-    <title>Home | Government College Borda (Autonomous)</title>
-    <meta name="description" content="">
+    <title>Home | Government College of Commerce Borda (Autonomous)</title>
+    <meta name="description" content="Government College of Commerce Borda (Autonomous) is dedicated to providing quality education in commerce and business studies. Our college offers a range of undergraduate and postgraduate programs to help students achieve their academic and professional goals.">
+    <meta name="keywords" content="Government College of Commerce Borda, Autonomous, Commerce College, Business Studies, Education, Undergraduate Programs, Postgraduate Programs">
+    <meta name="author" content="Government College of Commerce Borda">
+    <meta name="robots" content="index, follow">
     <!--================= Responsive Tag =================-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!--================= Owl Carousel css =================-->
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-    <!--================= Owl Carousel css =================-->
+    <!--================= Swiper css =================-->
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
     <!--================= Elegant icon css  =================-->
     <link rel="stylesheet" type="text/css" href="assets/fonts/elegant-icon.css">
@@ -40,172 +43,172 @@
     <link href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons.css" rel="stylesheet">
 
     <style>
-.latest-news-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
+    .latest-news-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
 
-.latest-news {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    width: calc(100% - 60px); /* Adjust based on button width */
-}
+    .latest-news {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: calc(100% - 60px); /* Adjust based on button width */
+    }
 
-.news-text {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
+    .news-text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
 
-.news-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-}
+    .news-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
 
-.news-icon {
-    margin-right: 5px; /* Space between icon and news text */
-    font-size: 24px; /* Adjust size as needed */
-    color: #007bff; /* Adjust color as needed */
-}
+    .news-icon {
+        margin-right: 5px; /* Space between icon and news text */
+        font-size: 24px; /* Adjust size as needed */
+        color: #007bff; /* Adjust color as needed */
+    }
 
-.arrow-btn {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .arrow-btn {
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-.prev-btn {
-    left: 10px;
-}
+    .prev-btn {
+        left: 10px;
+    }
 
-.next-btn {
-    right: 10px;
-}
-.examination-news-area {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-}
+    .next-btn {
+        right: 10px;
+    }
 
-.heading {
-    font-size: 28px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-}
+    .examination-news-area {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+    }
 
-.news-item {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    font-size: 16px;
-    color: #555;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
+    .heading {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+    }
 
-.news-item:hover {
-    background-color: #eaeaea;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
+    .news-item {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        font-size: 16px;
+        color: #555;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.news-icon {
-    margin-right: 10px; /* Space between icon and news text */
-    font-size: 20px; /* Size of calendar icon */
-    color: #007bff; /* Color of calendar icon */
-}
+    .news-item:hover {
+        background-color: #eaeaea;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
 
-.news-content {
-    display: flex;
-    flex-direction: column;
-}
+    .news-icon {
+        margin-right: 10px; /* Space between icon and news text */
+        font-size: 20px; /* Size of calendar icon */
+        color: #007bff; /* Color of calendar icon */
+    }
 
-.news-link {
-    display: flex;
-    align-items: center;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .news-content {
+        display: flex;
+        flex-direction: column;
+    }
 
-.news-link:hover {
-    text-decoration: underline;
-}
+    .news-link {
+        display: flex;
+        align-items: center;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.pdf-icon {
-    font-size: 18px; /* Size of the PDF icon */
-    margin-left: 10px; /* Space between text and PDF icon */
-    color: #ff0000; /* Color of the PDF icon */
-}
+    .news-link:hover {
+        text-decoration: underline;
+    }
 
-.news-text {
-    margin-bottom: 5px;
-}
+    .pdf-icon {
+        font-size: 18px; /* Size of the PDF icon */
+        margin-left: 10px; /* Space between text and PDF icon */
+        color: #ff0000; /* Color of the PDF icon */
+    }
 
-.news-date {
-    font-size: 14px;
-    color: #888;
-    margin-top: 5px;
-}
+    .news-text {
+        margin-bottom: 5px;
+    }
 
-/* Ensure the calendar icon is aligned properly with text */
-.news-item .news-content {
-    display: flex;
-    align-items: center;
-}
+    .news-date {
+        font-size: 14px;
+        color: #888;
+        margin-top: 5px;
+    }
 
-.news-item .news-text {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-}
-/* Ensure the menu container takes up full width and aligns items to the left */
-.react-main-menu {
-    display: flex;
-    justify-content: center; /* Align items to the left */
-    width: 100%;
-}
+    /* Ensure the calendar icon is aligned properly with text */
+    .news-item .news-content {
+        display: flex;
+        align-items: center;
+    }
 
-/* Adjust inner menus to avoid extra space */
-.react-inner-menus {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping if needed */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    .news-item .news-text {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
 
-/* Optionally adjust the spacing of individual menu items */
-.react-inner-menus > li {
-    margin-right: 20px; /* Adjust margin as needed */
-}
+    /* Ensure the menu container takes up full width and aligns items to the left */
+    .react-main-menu {
+        display: flex;
+        justify-content: center; /* Align items to the left */
+        width: 100%;
+    }
 
+    /* Adjust inner menus to avoid extra space */
+    .react-inner-menus {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping if needed */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
+    /* Optionally adjust the spacing of individual menu items */
+    .react-inner-menus > li {
+        margin-right: 20px; /* Adjust margin as needed */
+    }
     </style>
-
 </head>
+
 
 <body>
     <!--================= Preloader Section Start Here =================-->
@@ -1042,9 +1045,9 @@
                             <div class="col-xl-4">
                                 <div class="maximized-part">
                                     <div class="blog-picture"><a href="#"><img
-                                                src="assets/news/State-level-comm.-workshop-Jonlen-DeSa-1-1.webp" alt="blog-picture"></a></div>
-                                    <div class="blog-date">5 July, 2023</div>
-                                    <div class="blog-title"><a href="#">ONE DAY STATE LEVEL COMMERCE WORKSHOP
+                                                src="assets/news/workshop.jpeg" alt="blog-picture"></a></div>
+                                    <div class="blog-date">6 August, 2024</div>
+                                    <div class="blog-title"><a href="#">Guest Lecture on TYBcom project by Dr. Sucheta Naik, Principal, Shree Mallikarjun & Shri Chetan Manju Desai College, Canacona
                                     </a></div>
                                     <div class="read-more-div"><a href="#" class="read-more">Read more
                                             <i class="fa-solid fa-arrow-right"></i></a></div>
@@ -1054,29 +1057,29 @@
                                 <div class="minimized-part">
                                     <div class="blog-item">
                                         <div class="blog-picture"><a href="#"><img
-                                                    src="assets/news/WeightliftingSportSeminar-Aaron-Pereira-1-240x145.webp" alt="blog-picture"></a>
+                                                    src="assets/news/workshop 2.jpeg" alt="blog-picture"></a>
                                         </div>
                                         <div class="content">
-                                            <div class="blog-date">17 July, 2023</div>
-                                            <div class="blog-title"><a href="#">IinteInteractive seminar on the sport of weightlifting</a></div>
+                                            <div class="blog-date">5 August, 2024</div>
+                                            <div class="blog-title"><a href="#">One Day Workshop on Mid Day Meal Social Audit on 5th August 2024</a></div>
                                         </div>
                                     </div>
                                     <div class="blog-item">
                                         <div class="blog-picture"><a href="#"><img
-                                                    src="assets/news/NEP-Elizabeth-Henriques-240x145.webp" alt="blog-picture"></a>
+                                                    src="assets/news/workshop 3.jpeg" alt="blog-picture"></a>
                                         </div>
                                         <div class="content">
-                                            <div class="blog-date">10 May, 2023</div>
-                                            <div class="blog-title"><a href="#">Two Day Workshop on “Certification and Assessment”</a></div>
+                                            <div class="blog-date">20 July, 2024</div>
+                                            <div class="blog-title"><a href="#">One Day State Level Workshop on Innovative Teaching and Learning Approaches in Cost Accounting</a></div>
                                         </div>
                                     </div>
                                     <div class="blog-item">
                                         <div class="blog-picture"><a href="#"><img
-                                                    src="assets/news/np-Tanvi-Shenoy-240x145.webp" alt="blog-picture"></a>
+                                                    src="assets/news/workshop 4.jpeg" alt="blog-picture"></a>
                                         </div>
                                         <div class="content">
-                                            <div class="blog-date">13 April, 2023</div>
-                                            <div class="blog-title"><a href="#">Annual Day and Prize Distribution Ceremony 2022-23</a></div>
+                                            <div class="blog-date">4 July, 2024</div>
+                                            <div class="blog-title"><a href="#">Orientation Program on Step by Step Success on Chartered Accountancy by Ms. Ashfa Shaikh on 4th July 2024</a></div>
                                         </div>
                                     </div>
                                 </div>
